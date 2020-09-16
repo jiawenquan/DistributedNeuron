@@ -1,0 +1,5 @@
+E:\GitProject\DistributedNeuron\bin\Debug\netstandard2.0\DistributedNeuron.deps.json
+E:\GitProject\DistributedNeuron\bin\Debug\netstandard2.0\DistributedNeuron.dll
+E:\GitProject\DistributedNeuron\obj\Debug\netstandard2.0\DistributedNeuron.csprojAssemblyReference.cache
+E:\GitProject\DistributedNeuron\obj\Debug\netstandard2.0\DistributedNeuron.AssemblyInfoInputs.cache
+E:\GitProject\DistributedNeuron\obj\Debug\netstandard2.0\DistributedNeuron.AssemblyInfo.cs
