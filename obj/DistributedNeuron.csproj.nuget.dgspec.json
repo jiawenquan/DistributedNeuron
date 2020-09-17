@@ -39,10 +39,6 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
-            "MathNet.Numerics": {
-              "target": "Package",
-              "version": "[4.12.0, )"
-            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",

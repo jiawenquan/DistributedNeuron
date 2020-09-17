@@ -1,10 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "HCUdDT8+llBZavuXGveEWGnGTshYCTYJEoAIxYbd/D84ym8vQmXIk+0KfwzbfIt75S/8SAHlwSp/g4fKBfj8wQ==",
+  "dgSpecHash": "JQYh4RkETjxQlVj0PKrunPUrl0P8OqWNkhB1w1l2QEpg3j0P2R2V48MqYrKLmCUKfwBAwEO8UGaKivvyCcQWdw==",
   "success": true,
   "projectFilePath": "E:\\GitProject\\DistributedNeuron\\DistributedNeuron.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Administrator\\.nuget\\packages\\mathnet.numerics\\4.12.0\\mathnet.numerics.4.12.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
