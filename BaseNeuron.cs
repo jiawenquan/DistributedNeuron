@@ -42,7 +42,17 @@ namespace DistributedNeuron
     ///  
     ///  干细跑的 分化设计
     ///  
+    ///  
     /// 
+    /// 
+    /// 多个神经元的电位加权相加
+    /// 
+    /// 
+    ///  刷新频率  1000合资以下
+    ///  
+    /// 
+    /// 上游神经元会影响下游神经元的权重 STDP  Spoke Timing Dependent Plasticity
+    ///  
     /// 
     /// </summary>
 
@@ -50,11 +60,22 @@ namespace DistributedNeuron
     {
         string id;     // 神经元的身份id() 
 
+        float current_film_voltage;  //当前膜电压 膜电压持续累加(多个输入神经元加权持续累加)
+
+
+        float resting_voltage; // 静息电压  放电后回归的初始电压,0 或者一个稳定额常量
+
+        float membrane_voltage_threshold;     // 膜电压阈值,低于阈值不会输出，高于阈值输出电压,并回归静息电压
+
+
+
         float decline; // 影响此神经元全部连接权重的,衰退速度
 
         float life_time;     // 细胞的 剩余生命 随着时间衰减 每次分裂分生命回复 接近未分化时初始状态的生命
 
         float differentiation_time;  //分裂倒计时如果为0,神经细胞分裂
+
+
 
         // 二维坐标空间的随机连接（）
 
@@ -67,6 +88,8 @@ namespace DistributedNeuron
         {
             id = Guid.NewGuid().ToString("N");
 
+            membrane_voltage_threshold = 1;
+            current_film_voltage = 0;
             // 随机分配输入相连的神经元   <形成网络结构>
             // 随机分配输出相连的神经元   <与输出神经元有一定比例的重合>
 
